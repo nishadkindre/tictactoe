@@ -1,0 +1,11 @@
+.reset-button {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 255, 0.7);
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 2rem auto;
+    display: block;
+}
