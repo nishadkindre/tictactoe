@@ -15,6 +15,10 @@
     /* transition: all 0.2s ease-in-out; */
 }
 
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .x {
     color: var(--x-color);
 }
