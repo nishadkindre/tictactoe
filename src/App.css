@@ -8,3 +8,11 @@ html,
 body {
   font-family: 'Fredoka', sans-serif;
 }
+
+:root {
+  --x-color: #ff0000bf;
+  --o-color: #0000ffbf;
+  --shadow-color: #888;
+  --shadow-hover-color: #999;
+  --bg-color: white;
+}

@@ -5,9 +5,9 @@
     justify-content: space-evenly;
     width: 20rem;
     font-size: 1.5rem;
-    background-color: white;
+    background-color: var(--bg-color);
     margin: 3rem auto;
-    box-shadow: 0 0 8px #888;
+    box-shadow: 0 0 8px var(--shadow-color);
     border-radius: 0.5rem;
     font-weight: bold;
 }
@@ -19,14 +19,14 @@
 }
 
 .x-score {
-    color: rgba(255, 0, 0, 0.75);
-    border-bottom: 5px solid rgba(255, 0, 0, 0.75);
+    color: var(--x-color);
+    border-bottom: 5px solid var(--x-color);
     border-bottom-left-radius: 0.5rem;
 }
 
 .o-score {
-    color: rgba(0, 0, 255, 0.75);
-    border-bottom: 5px solid rgba(0, 0, 255, 0.75);
+    color: var(--o-color);
+    border-bottom: 5px solid var(--o-color);
     border-bottom-right-radius: 0.5rem;
 }
 

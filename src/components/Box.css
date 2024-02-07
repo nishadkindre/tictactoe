@@ -1,8 +1,8 @@
 .box {
     border: none;
-    background-color: #fff;
+    background-color: var(--bg-color);
     border-radius: 10%;
-    box-shadow: 0 0 8px #888;
+    box-shadow: 0 0 8px var(--shadow-color);
     width: 5rem;
     height: 5rem;
     text-align: center;
@@ -11,18 +11,19 @@
     font-weight: bold;
     line-height: 5rem;
     margin: 0.5rem;
+    cursor: pointer;
     /* transition: all 0.2s ease-in-out; */
 }
 
 .x {
-    color: rgba(255, 0, 0, 0.75);
+    color: var(--x-color);
 }
 
 .o {
-    color: rgba(0, 0, 255, 0.75);
+    color: var(--o-color);
 }
 
 .box:hover {
-    box-shadow: 0 0 12px #999;
+    box-shadow: 0 0 12px var(--shadow-hover-color);
 
 }
