@@ -4,15 +4,41 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  font-family: 'Fredoka', sans-serif;
-}
-
 :root {
   --x-color: #ff0000bf;
   --o-color: #0000ffbf;
+  --reset-bg-color: #0000ffbf;
   --shadow-color: #888;
   --shadow-hover-color: #999;
   --bg-color: white;
+  --txt-color: white;
+  --page-background-color: white;
+  --toggle-bg: #f0ea9db3;
+  --toggle-fg: #ffd000;
+}
+
+[data-theme="dark"] {
+  --x-color: #008170;
+  --o-color: #D6D5A8;
+  --reset-bg-color: #1c2d58;
+  --shadow-color: rgb(29, 29, 29);
+  --shadow-hover-color: #283452;
+  --bg-color: #232D3F;
+  --txt-color: white;
+  --page-background-color: #03001C;
+  --toggle-bg: #283452;
+  --toggle-fg: #00a6ff;
+}
+
+html {
+  font-family: "Fredoka", sans-serif;
+}
+
+.App {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--page-background-color);
 }

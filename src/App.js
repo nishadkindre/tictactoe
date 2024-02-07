@@ -3,6 +3,8 @@ import "./App.css";
 import Board from "./components/Board";
 import ScoreBoard from "./components/ScoreBoard";
 import ResetButton from "./components/ResetButton";
+import Toggle from "./components/Toggle";
+import useLocalStorage from "use-local-storage";
 
 const App = () => {
   const WIN_CONDTNS = [
@@ -20,6 +22,7 @@ const App = () => {
   const [playerX, setPlayerX] = useState(true);
   const [scores, setScores] = useState({ xScore: 0, oScore: 0 });
   const [gameOver, setGameOver] = useState(false);
+  const [isDark, setIsDark] = useLocalStorage("isDark", false);
 
   const handleBoxClick = (boxId) => {
     // console.log(boxId);
@@ -66,7 +69,8 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="App" data-theme={isDark ? "dark" : "light"}>
+      <Toggle isChecked={isDark} handleChange={() => setIsDark(!isDark)} />
       <ScoreBoard scores={scores} playerX={playerX} />
       <Board board={board} onClick={gameOver ? resetBoard : handleBoxClick} />
       <ResetButton resetBoard={resetBoard} />
