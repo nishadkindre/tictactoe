@@ -17,6 +17,7 @@
 
 button {
     -webkit-tap-highlight-color: transparent;
+    touch-action: none;
 }
 
 .x {

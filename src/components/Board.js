@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "./Box";
-import "./Board.css";
+import "./styles/Board.css";
 
 const Board = ({ board, onClick }) => {
   //   console.log(board);
